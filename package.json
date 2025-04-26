@@ -1,0 +1,23 @@
+{
+  "name": "cambio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "type": "module",
+  "dependencies": {
+    "@fastify/cors": "^11.0.1",
+    "axios": "^1.9.0",
+    "axis": "^1.0.0",
+    "cheerio": "^1.0.0",
+    "cors": "^2.8.5",
+    "fastify": "^5.2.2",
+    "http-errors": "^2.0.0",
+    "request-promise": "^0.0.1"
+  }
+}
