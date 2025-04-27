@@ -16,7 +16,7 @@ const app = fastify({
  })
 app.register(router, {prefix: "/api/v1"});
 app.setNotFoundHandler(app.notfound)
-
-app.listen({port: 3000}, ()=>{
-    console.log("server no ar")
+const port = 3000
+app.listen({port: port}, ()=>{
+    console.log(`server run in port ${port}`)
 })
