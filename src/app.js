@@ -15,8 +15,9 @@ const app = fastify({
    
  })
 app.register(router, {prefix: "/api/v1"});
-app.setNotFoundHandler(app.notfound)
-const port = 3000
-app.listen({port: port}, ()=>{
+app.setNotFoundHandler(app.notfound);
+
+const port = process.env.PORT || 4000
+app.listen({port: port, host: '0.0.0.0' }, ()=>{
     console.log(`server run in port ${port}`)
 })
