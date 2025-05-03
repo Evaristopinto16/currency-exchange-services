@@ -20,7 +20,7 @@ async function cambioService(rub, aoa, valor) {
 
     const dataConvesao  = await $("body > div.wrapper > div.content > div.page-content > div > div > div > div.conversion__value > div.conversion__value-text > h2 > span:nth-child(2)").text()
     const dataLastDate = await $("body > div.wrapper > div.content > div.page-content > div > div > div > div.conversion__links.pt-20.conversion__links--mob").text()
-     
+     console.log(data)
     const values = await taxa(dataConvesao)
     rub = rub.toUpperCase()
     const result = {
