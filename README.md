@@ -8,19 +8,42 @@ O **Currency Exchange Service** é uma API desenvolvida com **Node.js** e **Fast
 
 A estrutura do projeto é organizada da seguinte forma:
 currency-exchange-service/
+
 ├── src/
-│   ├── config/               # Configurações do aplicativo
-│   │   └── config.js         # Arquivo de configuração
-│   ├── controller/           # Controladores API
-│   │   └── exchangeController.js  # Gerenciamento de conversões
-│   ├── router/               # Definição das rotas
-│   │   └── exchangeRouter.js   # Rotas da API
-│   ├── serviceutils/         # Lógica de negócios
-│   │   └── exchangeService.js   # Funções de conversão
-│   └── app.js                # Inicialização do aplicativo Fastify
-├── package.json              # Dependências e scripts
-├── README.md                 # Documentação do projeto
-└── .gitignore                # Arquivos a serem ignorados pelo Git
+
+│   ├── config/               
+# Configurações do aplicativo
+
+│   │   └── config.js         
+
+# Arquivo de configuração
+│   ├── controller/           
+
+# Controladores API
+│   │   └── exchangeController.js  
+
+# Gerenciamento de conversões
+│   ├── router/               
+
+# Definição das rotas
+│   │   └── exchangeRouter.js   
+
+# Rotas da API
+│   ├── serviceutils/         
+
+# Lógica de negócios
+│   │   └── exchangeService.js   
+
+# Funções de conversão
+│   └── app.js                
+
+# Inicialização do aplicativo Fastify
+├── package.json              
+# Dependências e scripts
+├── README.md                 
+# Documentação do projeto
+└── .gitignore                
+# Arquivos a serem ignorados pelo Git
 
 ## Instalação
 
