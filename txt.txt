@@ -1,4 +1,4 @@
-# Currency Exchange Service - Rublo & Kwanza
+# Currency Exchange Service - Cambio informal
 
 ## Descrição
 

@@ -12,38 +12,37 @@ currency-exchange-service/
 ├── src/
 
 │   ├── config/               
-# Configurações do aplicativo
+**Configurações do aplicativo**
 
 │   │   └── config.js         
 
-# Arquivo de configuração
+**Arquivo de configuração**
 │   ├── controller/           
 
-# Controladores API
+**Controladores API**
 │   │   └── exchangeController.js  
-
-# Gerenciamento de conversões
+ **Gerenciamento de conversões**
 │   ├── router/               
 
-# Definição das rotas
+ **Definição das rota**s
 │   │   └── exchangeRouter.js   
 
-# Rotas da API
+**Rotas da API**
 │   ├── serviceutils/         
 
-# Lógica de negócios
+**Lógica de negócios**
 │   │   └── exchangeService.js   
 
-# Funções de conversão
+**Funções de conversão**
 │   └── app.js                
 
-# Inicialização do aplicativo Fastify
+ **Inicialização do aplicativo Fastify**
 ├── package.json              
-# Dependências e scripts
+**Dependências e scripts**
 ├── README.md                 
-# Documentação do projeto
+**Documentação do projeto**
 └── .gitignore                
-# Arquivos a serem ignorados pelo Git
+ **Arquivos a serem ignorados pelo Git**
 
 ## Instalação
 
@@ -56,4 +55,4 @@ currency-exchange-service/
 1. **Clone o repositório:**
 
    ```bash
-   git clonehttps://github.com/Evaristopinto16/currency-exchange-service
+   git clone https://github.com/Evaristopinto16/currency-exchange-service
