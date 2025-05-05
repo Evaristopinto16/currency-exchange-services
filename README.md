@@ -17,31 +17,43 @@ currency-exchange-service/
 │   │   └── config.js         
 
 **Arquivo de configuração**
+
 │   ├── controller/           
 
 **Controladores API**
+
 │   │   └── exchangeController.js  
+
  **Gerenciamento de conversões**
+
 │   ├── router/               
 
  **Definição das rota**s
 │   │   └── exchangeRouter.js   
 
 **Rotas da API**
+
 │   ├── serviceutils/         
 
 **Lógica de negócios**
+
 │   │   └── exchangeService.js   
 
 **Funções de conversão**
 │   └── app.js                
 
  **Inicialização do aplicativo Fastify**
-├── package.json              
+
+├── package.json          
+
 **Dependências e scripts**
-├── README.md                 
+
+├── README.md         
+
 **Documentação do projeto**
-└── .gitignore                
+
+└── .gitignore      
+          
  **Arquivos a serem ignorados pelo Git**
 
 ## Instalação
