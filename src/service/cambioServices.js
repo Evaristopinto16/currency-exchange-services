@@ -11,18 +11,42 @@ const url = URL.url
 async function cambioService(rub, aoa, valor) {
     
      
-
+try {
+    
+ 
     const {data} = await get(`${url}/${rub}-${aoa}/${valor}`);
      
   
 
     const $ = await cheerio.load(data);
+    const newArray = []
 
     const dataConvesao  = await $("body > div.wrapper > div.content > div.page-content > div > div > div > div.conversion__value > div.conversion__value-text > h2 > span:nth-child(2)").text()
     const dataLastDate = await $("body > div.wrapper > div.content > div.page-content > div > div > div > div.conversion__links.pt-20.conversion__links--mob").text()
-     console.log(data)
-    const values = await taxa(dataConvesao)
-    rub = rub.toUpperCase()
+    let dataTable = await $("body > div.wrapper > div.content > div:nth-child(3) > div.container.container--big > div")
+    let tabeleArray = await $('[class="table-blue__cell table-blue__cell--third"]').contents()
+ 
+
+    
+
+    for (const key in tabeleArray) {
+        if(tabeleArray[key].data != undefined){
+            if(tabeleArray[key].data != null || tabeleArray[key].data != " "){
+                console.log(tabeleArray[key].data)
+                newArray.push(tabeleArray[key].data)
+            }
+      
+    }
+    }
+
+
+    console.log(newArray)
+
+/*a ideia é crawler os dados da tabela */
+     aoa = aoa.toUpperCase()
+
+    const values = await taxa(dataConvesao, aoa)
+    
     const result = {
         status: "sucess",
         data: {
@@ -34,6 +58,10 @@ async function cambioService(rub, aoa, valor) {
     }
 
     return result
+
+}catch (error) {
+    console.log(error)
+    }
     
 }
 

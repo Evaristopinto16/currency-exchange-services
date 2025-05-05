@@ -1,30 +1,31 @@
 
 
 
-async function convesaoCambioUtilis(values) {
+async function convesaoCambioUtilis(values, x) {
 
-    const dataFinal = await taxaInformal(values)
+    const dataFinal = await taxaInformal(values, x)
 
     return dataFinal
     
 }
   
-async function parseToNumero(number){
-    
+async function parseToNumero(number, x){
+ 
     let parseNumber = ""
     let text 
-    if(number.includes("AOA") === true){
-        const dataNumber = number.split("AOA")[0];
-        text = "AOA"
+    if(number.includes(x) === true){
+        const dataNumber = number.split(x)[0];
+        text = x
         parseNumber = dataNumber
     }
-    if(number.includes("RUB")){
+
+ /*   if(number.includes("RUB")){
         text = "RUB"
 
         const dataNumber = number.split("RUB")[0]
         parseNumber = dataNumber 
 
-    }
+    }*/
     parseNumber = await parseNumber.trim().replace(/\s+/g, '');
     return {
         parseNumber,
@@ -33,9 +34,9 @@ async function parseToNumero(number){
 }
 
 
-async function taxaInformal(values) {
+async function taxaInformal(values, x) {
 
-    let valueParse = await parseToNumero(values)  
+    let valueParse = await parseToNumero(values, x)  
 
     let coint = valueParse.coint
 
