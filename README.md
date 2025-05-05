@@ -1,8 +1,8 @@
-# Currency Exchange Service - Rublo & Kwanza
+# Currency Exchange Service - Cambio Informal
 
 ## Descrição
 
-O **Currency Exchange Service** é uma API desenvolvida com **Node.js** e **Fastify** que permite a conversão entre o Rublo (RUB) e o Kwanza (AOA). Este projeto busca atender à necessidade de fornecer taxas de câmbio informais atualizadas, refletindo a dinâmica diária entre essas duas moedas.
+O **Currency Exchange Service** é uma API desenvolvida com **Node.js** e **Fastify** que permite a conversão informal. Este projeto busca atender à necessidade de fornecer taxas de câmbio informais atualizadas, refletindo a dinâmica diária das moedas.
 
 ## Estrutura do Projeto
 
@@ -11,36 +11,36 @@ currency-exchange-service/
 
 ├── src/
 
-│   ├── config/               
-**Configurações do aplicativo**
+  │   ├── config/ 
 
-│   │   └── config.js         
+**Configurações do aplicativo**
+      │   │   └── config.js         
 
 **Arquivo de configuração**
 
-│   ├── controller/           
+     │   ├── controller/           
 
 **Controladores API**
 
-│   │   └── exchangeController.js  
+        │   │   └── exchangeController.js  
 
  **Gerenciamento de conversões**
 
-│   ├── router/               
+    │   ├── router/               
 
  **Definição das rota**s
-│   │   └── exchangeRouter.js   
+        │   │   └── exchangeRouter.js   
 
 **Rotas da API**
 
-│   ├── serviceutils/         
+    │   ├── serviceutils/         
 
 **Lógica de negócios**
 
-│   │   └── exchangeService.js   
+        │   │   └── exchangeService.js   
 
 **Funções de conversão**
-│   └── app.js                
+    │   └── app.js                
 
  **Inicialização do aplicativo Fastify**
 
@@ -53,7 +53,7 @@ currency-exchange-service/
 **Documentação do projeto**
 
 └── .gitignore      
-          
+
  **Arquivos a serem ignorados pelo Git**
 
 ## Instalação
