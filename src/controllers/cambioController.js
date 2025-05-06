@@ -20,6 +20,8 @@ import cambioService from "../service/cambioServices.js";
    
     if(body["coin"].length ==3 && body["conversionto"].length == 3){
         const data = await cambioService(body["coin"], body["conversionto"], body.value);
+        
+        
         reply.send(data)
     }else{
         reply.status(500)
@@ -32,13 +34,6 @@ import cambioService from "../service/cambioServices.js";
     }
  }
 
- const getDayCambio = async ()=>{
-    let coin = Number(1000);
-    
-
-    console.log(coin)
- }
  export default {
-    cambioPost,
-    getDayCambio
+    cambioPost
 }
