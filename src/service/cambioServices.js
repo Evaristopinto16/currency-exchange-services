@@ -60,7 +60,7 @@ try {
 
     return {
         status: false,
-        data: "Ocorreu um erro no servico externo"
+        data: "ocorreu um erro inesperado no servidor"
     }
     }
     
