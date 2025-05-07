@@ -56,46 +56,46 @@ async function diaSemanas() {
  
     let day, day2, day3, day4, day5, day6, day7
       if(Hoje == 1){
-          day = "Segunda";
-          day2 = "domingo";
+          day = "Segunda-feira";
+          day2 = "Domingo";
           day3 = "Sabado";
-          day4 = "sexta"
+          day4 = "Sexta-feira"
       }
       if(Hoje == 2){
-          day = "Terca";
-          day2 = "Segunda";
+          day = "Terça-feira";
+          day2 = "Segunda-feira";
           day3 = "Domingo";
           day4 = "Sabado"
       }
       if(Hoje == 3){
-          day = "quarta";
-          day2 = "terca";
-          day3 = "segunda";
-          day4 = "domingo"
+          day = "Quarta-feira";
+          day2 = "Terça-feira";
+          day3 = "Segunda-feira";
+          day4 = "Domingo"
       }
       if(Hoje == 4){
-          day = "quinta";
-          day2 = "quarta";
-          day3 = "terca";
-          day4 = "segunda"
+          day = "Quinta-feira";
+          day2 = "Quarta-feira";
+          day3 = "Terça-feira";
+          day4 = "Segunda-feira"
       }
       if(Hoje == 5){
-          day = "sexta";
-          day2 = "quinta";
-          day3 = "quarta";
-          day4 = "terca"
+          day = "Sexta-feira";
+          day2 = "Quinta-feira";
+          day3 = "Quarta-feira";
+          day4 = "Terça-feira"
       }
       if(Hoje == 6){
-          day = "sabado";
-          day2 = "sexta";
-          day3 = "quinta";
-          day4 = "quarta"
+          day = "Sabado";
+          day2 = "Sexta-feira";
+          day3 = "Quinta-feira";
+          day4 = "Quarta-feira"
       }
       if(Hoje == 7){
-          day = "domingo";
-          day2 = "sabado";
-          day3 = "sexta";
-          day4 = "quinta"
+          day = "Domingo";
+          day2 = "Sabado";
+          day3 = "Sexta-feira";
+          day4 = "Quinta-feira"
       }
   return {
     day, day2, day3, day4, day5, day6, day7

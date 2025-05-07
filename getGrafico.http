@@ -2,3 +2,12 @@ http://127.0.0.1:3000;
 
 ##
 http://127.0.0.1:3000/api/v1/getcoin
+
+#
+http://127.0.0.1:3000/api/v1/
+post
+body = {
+  "coin": "eur",
+  "conversionto": "rub",
+  "value": 1000
+}
