@@ -31,8 +31,7 @@ try {
  
   const semana = await cotacoesPassadasUtilis.cotacoes(tabeleArray)
  
-
-   // console.log()
+ 
 
 /*a ideia é crawler os dados da tabela */
      aoa = aoa.toUpperCase()

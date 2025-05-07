@@ -4,7 +4,7 @@ const ListaMoedast = async (request, reply)=>{
  
 
     const date = await listaMoedas()
-    console.log(date)
+
     reply.status(200).send(
         {
             status: "sucess",
