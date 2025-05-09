@@ -3,6 +3,8 @@ import router from "./routers/router.js";
 import cors from "@fastify/cors"
 import 'dotenv/config'
 
+import cronJob from "./utilis/notsleepUtilis.js"; 
+cronJob()
 const app = fastify({
     logger: false
 })
