@@ -20,7 +20,7 @@ import cambioService from "../service/cambioServices.js";
    
     if(body["coin"].length ==3 && body["conversionto"].length == 3){
         const data = await cambioService(body["coin"], body["conversionto"], body.value);
-        console.log(data)
+     
         if(data.status != "sucess" ){
             reply.status(500).send(data)
         } 
