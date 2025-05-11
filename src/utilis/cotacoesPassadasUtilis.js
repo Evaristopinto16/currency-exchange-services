@@ -53,7 +53,8 @@ let tabeleArray = values
 async function diaSemanas() {
     let Hoje = new Date()
     Hoje = Hoje.getDay()
- 
+
+
     let day, day2, day3, day4, day5, day6, day7
       if(Hoje == 1){
           day = "Segunda-feira";
@@ -91,7 +92,7 @@ async function diaSemanas() {
           day3 = "Quinta-feira";
           day4 = "Quarta-feira"
       }
-      if(Hoje == 7){
+      if(Hoje == 7|| Hoje == 0){
           day = "Domingo";
           day2 = "Sabado";
           day3 = "Sexta-feira";
