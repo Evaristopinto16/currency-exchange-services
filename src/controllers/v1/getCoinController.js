@@ -1,4 +1,4 @@
-import listaMoedas from "../models/listCointModels.js"
+import listaMoedas from "../../models/v1/listCointModels.js"
 
 const ListaMoedast = async (request, reply)=>{
  

@@ -1,9 +1,11 @@
 import fastify from "fastify";
-import router from "./routers/router.js";
+import v1router from "./routers/v1/router.js";
+import v2router from "./routers/v2/router.js";
+
 import cors from "@fastify/cors"
 import 'dotenv/config'
 
-import cronJob from "./utilis/notsleepUtilis.js"; 
+import cronJob from "./utilis/v1/notsleepUtilis.js"; 
 cronJob()
 const app = fastify({
     logger: false
@@ -21,7 +23,8 @@ const app = fastify({
     origin: '*',
    
  })
-app.register(router, {prefix: "/api/v1"});
+app.register(v1router, {prefix: "/api/v1"});
+app.register(v2router, {prefix: "/api/v2"});
 app.setNotFoundHandler(app.notfound);
 
 const port = process.env.PORT || 4000

@@ -1,5 +1,5 @@
-import cambioPost from "../controllers/cambioController.js";
-import getCoinController from "../controllers/getCoinController.js"
+import cambioPost from "../../controllers/v1/cambioController.js";
+import getCoinController from "../../controllers/v1/getCoinController.js"
 
 
 const router = async(fastify)=>{

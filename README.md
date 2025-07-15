@@ -76,7 +76,7 @@ currency-exchange-service/
 
 A URL base para a API é:
 
-`http://127.0.0.1:3000/api/v1/`
+`http://127.0.0.1:3000/api/v2/`
 
 ## Endpoints
 
@@ -103,27 +103,26 @@ GET http://127.0.0.1:3000/api/v1/getcoin
   "status": "sucess",
   "date": {
     "coin": {
-      "first": {
-        "coin": "EURO",
+        "title": "EURO",
         "sigla": "eur"
       },
-      "second": {
-        "coin": "DOlar Americano",
+      "coin": {
+        "title": "Dolar Americano",
         "sigla": "usd"
       },
-      "third": {
-        "coin": "metical mocambicano",
+      "coin": {
+        "title": "metical mocambicano",
         "sigla": "mzn"
       },
-      "fourth": {
-        "coin": "Rublo",
+      "coin": {
+        "title": "Rublo",
         "sigla": "rub"
       },
-      "fifth": {
-        "coin": "Kwanza",
+      "coin": {
+        "title": "Kwanza",
         "sigla": "aoa"
       }
-    }
+    
   }
 }
 ```

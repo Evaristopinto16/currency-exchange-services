@@ -1,9 +1,9 @@
 import get from "axios";
 import * as cheerio from "cheerio";
-import taxa from "../utilis/conversaoCambioUtilis.js"
-import URL from "../config/apiurlConfig.js"
+import taxa from "../../utilis/v1/conversaoCambioUtilis.js"
+import URL from "../../config/apiurlConfig.js"
 
-import cotacoesPassadasUtilis from "../utilis/cotacoesPassadasUtilis.js";
+import cotacoesPassadasUtilis from "../../utilis/v1/cotacoesPassadasUtilis.js";
  
  
 

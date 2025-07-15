@@ -1,11 +1,11 @@
-import cambioService from "../service/cambioServices.js";
+import cambioService from "../../service/v1/cambioServices.js";
 
   const cambioPost = async (request, reply) =>{
     const body = request.body;
     if(!body){
         reply.status(200).send({
             status: "false",
-            message: "campos vazio"
+            message: "Campos Vazio"
         })
     }
  
