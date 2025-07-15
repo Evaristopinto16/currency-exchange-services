@@ -7,13 +7,26 @@ import checkCoin from "../../utilis/v2/checkCointUtilis.js";
 
   const cambioPost = async (request, reply) =>{
     const body = request.body;
- 
+    let {fromCurrency, toCurrency} = body
     if(!body){
         reply.status(200).send({
             status: "false",
             message: "campos vazio"
         })
+    }else
+     if(!fromCurrency){
+       return reply.status(200).send({
+            status: "false",
+            message: "campos vazio"
+        })
+    }else
+     if(!toCurrency){
+       return reply.status(200).send({
+            status: "false",
+            message: "campos vazio"
+        })
     }
+    
     
     let check = await checkCoin(listaMoedas, body)
 
