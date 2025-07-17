@@ -19,13 +19,6 @@ async function parseToNumero(number, x){
         parseNumber = dataNumber
     }
 
- /*   if(number.includes("RUB")){
-        text = "RUB"
-
-        const dataNumber = number.split("RUB")[0]
-        parseNumber = dataNumber 
-
-    }*/
     parseNumber = await parseNumber.trim().replace(/\s+/g, '');
     return {
         parseNumber,
@@ -47,11 +40,36 @@ async function taxaInformal(values, x) {
     dataMin = Number(dataMin).toFixed(2)
     dataMax = Number(dataMax).toFixed(2)
     const response = {
-        result: {
-            compraMinima: valueParse + " " +coint,
-            compraNormal: dataMin + " " +coint,
-            compraMaxima: dataMax + " " +coint
-        }
+        result: [
+            {
+                id: 1,
+                price: valueParse + " " +coint,
+                text: "Cotação Padrão",
+                percentage: null
+
+
+            },
+              {
+                id: 2,
+                price: dataMin + " " +coint,
+                text: "Cotação Maxima",
+                percentage: 0.17
+
+
+            },
+             {
+                id: 3,
+                price: dataMax + " " +coint,
+                text: "Cotação Maxima",
+                percentage: 0.19
+
+
+            }
+            
+
+        ]
+           
+        
     }
 
     return response
